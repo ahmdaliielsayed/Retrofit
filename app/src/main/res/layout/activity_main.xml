@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <Button
+        android:id="@+id/btnGetPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Get Posts"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGetOnePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Get One Post"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnGetPosts"
+        app:layout_constraintStart_toStartOf="@+id/btnGetPosts"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetPosts" />
+
+    <Button
+        android:id="@+id/btnGetComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Get Comments"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnGetOnePost"
+        app:layout_constraintStart_toStartOf="@+id/btnGetOnePost"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetOnePost" />
+
+    <Button
+        android:id="@+id/btnGetOnePostDynamically"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Get One Post Dynamically"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnGetComments"
+        app:layout_constraintStart_toStartOf="@+id/btnGetComments"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetComments" />
+
+    <Button
+        android:id="@+id/btnGetUserPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Get User Posts"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnGetOnePostDynamically"
+        app:layout_constraintStart_toStartOf="@+id/btnGetOnePostDynamically"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetOnePostDynamically" />
+
+    <Button
+        android:id="@+id/btnCreatePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Create Post"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnGetUserPosts"
+        app:layout_constraintStart_toStartOf="@+id/btnGetUserPosts"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetUserPosts" />
+
+    <Button
+        android:id="@+id/btnPutPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Put Post"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnCreatePost"
+        app:layout_constraintStart_toStartOf="@+id/btnCreatePost"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreatePost" />
+
+    <Button
+        android:id="@+id/btnDeletePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Delete Post"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnPutPost"
+        app:layout_constraintStart_toStartOf="@+id/btnPutPost"
+        app:layout_constraintTop_toBottomOf="@+id/btnPutPost" />
+</androidx.constraintlayout.widget.ConstraintLayout>
